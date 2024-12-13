@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Шахматная доска</title>
+  <style>
+    .chessboard {
+        display: grid;
+        grid-template-columns: repeat(8, 50px);
+        grid-template-rows: repeat(8, 50px);
+        gap: 0 0;
+    }
+
+    .square {
+        position: relative;
+      
+    }
+    .square:hover{
+        background-color: #a7545c;
+    }
+    
+    .square::after{
+        position: absolute;
+        content: "";
+        top:50%;
+        left:50%;
+        width:35px;
+        height: 35px;
+        transform: translate(-50%,-50%);
+    }
+    .second::after{
+        background: url(./peshka.png) no-repeat 50%/cover;
+    }
+    .ladya::after{
+        background: url(./ladya.png) no-repeat 50%/cover;
+    }
+    .horse::after{
+        background: url(./horse.png) no-repeat 50%/cover;
+    }
+    .slon::after{
+        background: url(./slon.png) no-repeat 50%/cover;
+    }
+
+    .king::after{
+        background: url(./king.png) no-repeat 50%/cover;
+    }
+    .queen::after{
+        background: url(./queen.png) no-repeat 50%/cover;
+    }
+
+    .white {
+      background-color: #eae0d0;
+    }
+
+    .black {
+      background-color: #594a3d;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="chessboard">
+    <!-- Клетки шахматной доски -->
+    <div class="square white ladya"></div>
+    <div class="square black horse"></div>
+    <div class="square white slon"></div>
+    <div class="square black king"></div>
+    <div class="square white queen"></div>
+    <div class="square black slon"></div>
+    <div class="square white horse"></div>
+    <div class="square black ladya"></div>
+    <!-- Черные клетки -->
+    <div class="square black second"></div>
+    <div class="square white second"></div>
+    <div class="square black second"></div>
+    <div class="square white second"></div>
+    <div class="square black second"></div>
+    <div class="square white second"></div>
+    <div class="square black second"></div>
+    <div class="square white second"></div>
+    <!-- и так далее, чтобы заполнить всю доску -->
+    <div class="square white"></div>
+    <div class="square black"></div>
+    <div class="square white"></div>
+    <div class="square black"></div>
+    <div class="square white"></div>
+    <div class="square black"></div>
+    <div class="square white"></div>
+    <div class="square black"></div>
+
+    <div class="square black"></div>
+    <div class="square white"></div>
+    <div class="square black"></div>
+    <div class="square white"></div>
+    <div class="square black"></div>
+    <div class="square white"></div>
+    <div class="square black"></div>
+    <div class="square white"></div>
+
+    <div class="square white"></div>
+    <div class="square black"></div>
+    <div class="square white"></div>
+    <div class="square black"></div>
+    <div class="square white"></div>
+    <div class="square black"></div>
+    <div class="square white"></div>
+    <div class="square black"></div>
+
+    <div class="square black"></div>
+    <div class="square white"></div>
+    <div class="square black"></div>
+    <div class="square white"></div>
+    <div class="square black"></div>
+    <div class="square white"></div>
+    <div class="square black"></div>
+    <div class="square white"></div>
+
+    <div class="square white second"></div>
+    <div class="square black second"></div>
+    <div class="square white second"></div>
+    <div class="square black second"></div>
+    <div class="square white second"></div>
+    <div class="square black second"></div>
+    <div class="square white second"></div>
+    <div class="square black second"></div>
+
+    <div class="square black ladya"></div>
+    <div class="square white horse"></div>
+    <div class="square black slon"></div>
+    <div class="square white king"></div>
+    <div class="square black queen"></div>
+    <div class="square white slon"></div>
+    <div class="square black horse"></div>
+    <div class="square white ladya"></div>
+  </div>
+</body>
+
+</html>
